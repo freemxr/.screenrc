@@ -13,7 +13,7 @@ Encrypt a new password
 
 screen provides a way to encrypt a password right from a screen session. In the following snippets, I assume the default screen key is A, as default.
 
-hit ctrl A :password
+hit Ctrl+A :password
 
 enter the new password twice
 
@@ -21,9 +21,9 @@ Now, the encrypted password is in the screen clipboard. We need to retrieve it
 
 Paste the crypted password
 
-The key shortcut for pasting the clipboard is by default Ctrl-A ]
+The key shortcut for pasting the clipboard is by default Ctrl+A+]
 
-hit ctrl A ]
+hit Ctrl+A+]
 
 the encrypted password should be pasted in the console
 
