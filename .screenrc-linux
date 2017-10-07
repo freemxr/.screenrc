@@ -1,0 +1,14 @@
+startup_message off
+nethack on
+vbell off
+msgminwait 0
+defscrollback 10000
+log off
+password ''
+
+hardstatus alwayslastline
+hardstatus string '%{= BW} %Y-%m-%d %{= kG} %H %{W}[%n] %=[ %w ] [ %{r}%l%{W} ] %{BW} %c:%s %{= kw}'
+
+screen -t top  2 top
+screen -t logs 1 tail -f /var/log/messages
+screen -t bash 0 bash

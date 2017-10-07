@@ -1,0 +1,17 @@
+startup_message off
+nethack on
+vbell off
+msgminwait 0
+defscrollback 10000
+log off
+password ''
+
+hardstatus alwayslastline
+hardstatus string '%{= BW} %Y-%m-%d %{= kG} %H %{W}[%n] %=[ %w ] [ %{r}%l%{W} ] %{BW} %c:%s %{= kw}'
+
+screen -t vmstat 5 systat -vmstat 2
+screen -t ifstat 4 systat -ifstat 2
+screen -t iostat 3 systat -iostat 2
+screen -t top  2 top -SHP
+screen -t logs 1 tail -f /var/log/messages
+screen -t tcsh 0 tcsh
