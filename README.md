@@ -4,7 +4,8 @@ My .screenrc file
 How to protect a screen session with a password
 
 Launch a new screen
-Easily done :
+
+Easily done:
 
 $ screen
 
